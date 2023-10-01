@@ -24,6 +24,7 @@ export default function RootLayout({
       <link rel="icon" href="/favicon.ico" />
       <body>
       <Header />
+      {children}
       <Footer />
       </body>
     </html>

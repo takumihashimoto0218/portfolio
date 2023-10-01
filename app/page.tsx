@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Introduction from '@/components/Introduction'
 import Link from 'next/link'
 
@@ -9,6 +8,7 @@ export default function Home() {
         <Introduction />
         <Link href="/works">Works</Link>
         <Link href="/skills">Skill</Link>
+        <Link href="/about">About</Link>
       </div>
     </>
   )

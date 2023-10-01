@@ -11,7 +11,6 @@ const Page = () => {
           <li key={work.title}>
             <h2>{work.title}</h2>
             <p>{work.description}</p>
-            {/* その他のコンテンツを表示 */}
           </li>
         ))}
       </ul>

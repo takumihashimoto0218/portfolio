@@ -1,5 +1,5 @@
 export type Work = {
-  imagePath: string; // imgからの相対パス
+  imagePath: string;
   imageHeight: number;
   cardWidth: number;
   title: string;

@@ -1,7 +1,7 @@
-import React from 'react';
 import Image from 'next/image';
 import IconIntroduction from './IconIntroduction';
 import PageLink from './PageLink';
+
 const Introduction = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
@@ -16,19 +16,20 @@ const Introduction = () => {
             />
           </div>
         </div>
-        <div className="text-2xl font-semibold">橋本拓海</div>
-        <div className="text-lg">宇都宮大学工学部情報電子オプティクスコース</div>
+        <div className="text-2xl font-semibold mt-4">橋本拓海</div>
+        <div className="text-lg mb-4">宇都宮大学工学部情報電子オプティクスコース</div>
         <div className="text-lg">
           趣味: ソフトテニス(10年), コナン, サウナ, プロ野球
         </div>
-        <IconIntroduction />
-        <PageLink />
+        <div className="mt-4">
+          <IconIntroduction />
+        </div>
+        <div className="mt-4">
+          <PageLink />
+        </div>
       </div>
     </div>
   );
 };
 
 export default Introduction;
-
-
-

@@ -36,7 +36,7 @@ const WorkList: Work[] = [
     tips: ["React", "flask", "ChatGPT API"],
   },
   {
-    imagePath: "typro.png",
+    imagePath: "Ainavi.png",
     imageHeight: 225,
     cardWidth: 350,
     title: "ainavi",

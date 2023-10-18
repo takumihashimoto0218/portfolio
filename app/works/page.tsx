@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import WorkList from '@/app/data/WorkList';
 import Link from 'next/link';
@@ -7,10 +8,15 @@ import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import Grid from "@mui/material/Grid";
 import Chip from "@mui/material/Chip";
+import { motion } from 'framer-motion';
 
 const Page = () => {
   return (
-    <>
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
+      viewport={{ once: true }}
+    >
       <Typography variant="h3" fontFamily="monospace">
         My Work List
       </Typography>
@@ -49,11 +55,12 @@ const Page = () => {
         ))}
       </Grid>
       <Link href="/">ホーム</Link>
-    </>
+    </motion.div>
   );
 };
 
 export default Page;
+
 
 
 

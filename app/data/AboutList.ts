@@ -52,6 +52,11 @@ const AboutList: About[] = [
     title: "受託開発を行う",
     subtitle: "3人で受託開発を行い、設計からあデプロイまで一通り行う",
   },
+  {
+    date: "2023/9",
+    title: "インターンの仮リーダーになる",
+    subtitle: "5人班の仮リーダーになる。MTGのMC,PL,レビューを行う",
+  },
 ];
 
 export default AboutList;

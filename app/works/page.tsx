@@ -10,7 +10,7 @@ import Chip from "@mui/material/Chip";
 
 const Page = () => {
   return (
-    <div>
+    <>
       <Typography variant="h3" fontFamily="monospace">
         My Work List
       </Typography>
@@ -49,7 +49,7 @@ const Page = () => {
         ))}
       </Grid>
       <Link href="/">ホーム</Link>
-    </div>
+    </>
   );
 };
 

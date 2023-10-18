@@ -1,20 +1,51 @@
 import React from 'react';
 import Link from 'next/link';
-import { SkillList } from '../data/Skills';
+import { SkillList } from "@/app/data/SkillList";
+import Image from 'next/image';
+import Card from "@mui/material/Card";
+import Typography from "@mui/material/Typography";
+import CardContent from "@mui/material/CardContent";
+import CardHeader from "@mui/material/CardHeader";
+import Grid from "@mui/material/Grid";
+import Box from "@mui/material/Box";
 
 const Page = () => {
   return (
-    <div>
-      <h1>My Skill List</h1>
-      <ul>
+    <Box p={2} style={{ background: 'gray' }}>
+      <Typography
+        variant="h2"
+        component="h1"
+        style={{
+          textAlign: 'center',
+          color: 'white',
+          letterSpacing: '1px',
+          marginBottom: '20px'
+        }}
+      >
+        My Skill List
+      </Typography>
+      <Grid container spacing={2}>
         {SkillList.map((skill) => (
-          <li key={skill.title}>
-            <h2>{skill.title}</h2>
-          </li>
+          <Grid item xs={12} sm={6} md={4} key={skill.title}>
+            <Card variant="outlined" sx={{ boxShadow: 2 }}>
+              <CardHeader
+                title={skill.title}
+                titleTypographyProps={{ variant: 'h6' }}
+              />
+              <CardContent>
+                <Image
+                  src={`/img/skillimage/${skill.imagePath}`}
+                  alt={skill.title}
+                  height={50}
+                  width={50}
+                />
+              </CardContent>
+            </Card>
+          </Grid>
         ))}
-      </ul>
+      </Grid>
       <Link href="/">ホーム</Link>
-    </div>
+    </Box>
   );
 };
 

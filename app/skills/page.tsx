@@ -1,6 +1,5 @@
 'use client';
 import React from 'react';
-import Link from 'next/link';
 import { SkillList } from "@/app/data/SkillList";
 import Image from 'next/image';
 import Card from "@mui/material/Card";
@@ -51,7 +50,6 @@ const Page = () => {
             </Grid>
           ))}
         </Grid>
-        <Link href="/">ホーム</Link>
       </Box>
     </motion.div>
   );

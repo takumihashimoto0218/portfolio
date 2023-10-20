@@ -23,7 +23,7 @@ const WorkList: Work[] = [
     cardWidth: 350,
     title: "hanatane-collection",
     description:
-      "trello",
+      "長期インターンで作成中のアプリ。何を作るかのハッカソン、上流仮定から自分で行いました。第一段階まで作成済み",
     tips: ["Ruby on Rails", "javascript",],
   },
   {
@@ -41,7 +41,7 @@ const WorkList: Work[] = [
     cardWidth: 350,
     title: "ainavi",
     description:
-      "ainavi",
+      "AI勉強をしている友達と作りました。の情報を情報を共有情報を共有できるサイトです",
     tips: ["Ruby on Rails"],
   },
 ];

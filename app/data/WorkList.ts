@@ -10,21 +10,21 @@ export type Work = {
 const WorkList: Work[] = [
   {
     imagePath: "portfolio.png",
-    imageHeight: 225,
+    imageHeight: 350,
     cardWidth: 350,
     title: "portfolioサイト",
     description:
-      "このサイトです。\nDBをsupabaseに格納したい \n https://github.com/yusei53/yusei53-portfolio",
+      "このサイトです。nextjsで初めての制作物",
     tips: ["Next.js", "TypeScript"],
   },
   {
-    imagePath: "asap.png",
-    imageHeight: 225,
+    imagePath: "collection.png",
+    imageHeight: 350,
     cardWidth: 350,
-    title: "trello",
+    title: "hanatane-collection",
     description:
       "trello",
-    tips: ["React"],
+    tips: ["Ruby on Rails", "javascript",],
   },
   {
     imagePath: "zundamon.png",
@@ -37,12 +37,12 @@ const WorkList: Work[] = [
   },
   {
     imagePath: "Ainavi.png",
-    imageHeight: 225,
+    imageHeight: 350,
     cardWidth: 350,
     title: "ainavi",
     description:
       "ainavi",
-    tips: ["React", "TypeScript"],
+    tips: ["Ruby on Rails"],
   },
 ];
 

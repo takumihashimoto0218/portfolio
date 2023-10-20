@@ -1,9 +1,10 @@
 import React from 'react';
+import Link from 'next/link';
 
 const Header = () => {
   const headerStyle = {
-    background: 'white',
-    color: 'black',
+    background: 'black',
+    color: 'white',
     padding: '20px',
     fontSize: '24px',
     textAlign: 'center',
@@ -15,7 +16,7 @@ const Header = () => {
 
   return (
     <div style={headerStyle}>
-      ポートフォリオ
+      <Link href="/">takumiのポートフォリオ</Link>
     </div>
   );
 };

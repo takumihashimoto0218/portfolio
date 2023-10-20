@@ -1,29 +1,20 @@
+"use client"
 import Introduction from '@/components/Introduction';
 import Link from 'next/link';
+import {motion} from 'framer-motion';
 
 
 export default function Home() {
-  const fadeIn = {
-    initial: {
-      opacity: 0
-    },
-    animate: {
-      opacity: 1,
-      transition: {
-        duration: 0.5
-      }
-    },
-    exit: {
-      opacity: 0,
-      transition: {
-        duration: 0.5
-      }
-    }
-  };
   return (
-    <div>
-      <Introduction />
-    </div>
+    <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
+    viewport={{ once: true }}
+  >
+      <div>
+        <Introduction />
+      </div>
+    </motion.div>
   );
 }
 

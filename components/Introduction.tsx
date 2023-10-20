@@ -18,9 +18,6 @@ const Introduction = () => {
         </div>
         <div className="text-2xl font-semibold mt-4">橋本拓海</div>
         <div className="text-lg mb-4">宇都宮大学工学部情報電子オプティクスコース</div>
-        <div className="text-lg">
-          趣味: ソフトテニス(10年), コナン, サウナ, プロ野球
-        </div>
         <div className="mt-4">
           <IconIntroduction />
         </div>

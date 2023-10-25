@@ -2,6 +2,7 @@
 import React from 'react';
 import AboutList from '@/app/data/AboutList';
 import { motion, useScroll } from 'framer-motion';
+import Typography from "@mui/material/Typography";
 
 const Page = () => {
   const { scrollXProgress } = useScroll();
@@ -15,7 +16,14 @@ const Page = () => {
     >
       <div className="bg-gray-100 py-16">
         <div className="container mx-auto">
-          <h1 className="text-3xl font-semibold mb-8">About</h1>
+          <Typography
+            variant="h3"
+            fontFamily="monospace"
+            align="center"
+            sx={{ marginTop: '2rem', marginBottom: '2rem' }}
+          >
+            About
+          </Typography>
           <div className="flex flex-col -mx-4">
             {AboutList.map((about) => (
               <div key={about.title} className="w-full px-4 mb-8">

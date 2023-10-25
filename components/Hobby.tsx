@@ -9,7 +9,7 @@ type HobbyProps = {
 
 const Hobby: React.FC<HobbyProps> = ({ hobbyData }) => {
   return (
-    <Card sx={{ height: '100%', backgroundColor: 'whitesmoke' }}>
+    <Card sx={{ height: '100%', backgroundColor: 'whitesmoke' }} style={{ maxWidth: '450px', margin: '0 auto' }}>
       <div>
         <div style={{ display: 'flex', justifyContent: 'center' }}>
           <Image
@@ -20,16 +20,10 @@ const Hobby: React.FC<HobbyProps> = ({ hobbyData }) => {
           />
         </div>
         <h2 className="text-center my-3">{hobbyData.title}</h2>
-        <p className="text-center my-2">{hobbyData.description}</p>
+        <p className="text-center my-2" style={{ wordWrap: 'break-word' }}>{hobbyData.description}</p>
       </div>
     </Card>
   );
 }
 
 export default Hobby;
-
-
-
-
-
-

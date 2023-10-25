@@ -19,7 +19,7 @@ const HobbyList: Hobby[] = [
     imageHeight: 200,
     cardWidth: 120,
     title: "コナン",
-    description: "漫画を全巻持っていて毎日アニメを見ている。映画も映画も公開日に見に行くほどコナンファン",
+    description: "漫画を全巻持っていて毎日アニメを見ている。映画も公開日に見に行くほどコナンファン",
   },
   {
     imagePath: "yamada.jpg",

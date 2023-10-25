@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 import Link from 'next/link';
 
 const Header = () => {
-  const headerStyle = {
+  const headerStyle: CSSProperties = {
     background: 'black',
     color: 'white',
     padding: '20px',

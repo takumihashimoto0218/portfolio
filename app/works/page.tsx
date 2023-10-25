@@ -1,7 +1,6 @@
-'use client';
+'use client'
 import React from 'react';
 import WorkList from '@/app/data/WorkList';
-import Link from 'next/link';
 import Typography from "@mui/material/Typography";
 import Image from 'next/image';
 import Card from "@mui/material/Card";
@@ -17,13 +16,18 @@ const Page = () => {
       whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
       viewport={{ once: true }}
     >
-      <Typography variant="h3" fontFamily="monospace">
+      <Typography
+        variant="h3"
+        fontFamily="monospace"
+        align="center"
+        sx={{ marginTop: '2rem', marginBottom: '2rem' }}
+      >
         My Work List
       </Typography>
       <Grid container spacing={3}>
         {WorkList.map((work) => (
           <Grid item key={work.title} xs={12} sm={6} md={4}>
-            <Card sx={{ height: '100%' }}>
+            <Card sx={{ height: '100%', backgroundColor: 'whitesmoke' }}>
               <Image
                 src={`/img/workimage/${work.imagePath}`}
                 height={work.imageHeight}
@@ -54,12 +58,12 @@ const Page = () => {
           </Grid>
         ))}
       </Grid>
-      <Link href="/">ホーム</Link>
     </motion.div>
   );
 };
 
 export default Page;
+
 
 
 

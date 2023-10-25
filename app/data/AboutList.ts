@@ -32,28 +32,28 @@ const AboutList: About[] = [
       "株式会社cloudQでインターンを始める",
   },
   {
-    date: "2023/1",
+    date: "2023/01",
     title: "請求自動化作成",
     subtitle: "googleAPIを用いて社内の給料計算を自動化",
   },
   {
-    date: "2023/3-now",
+    date: "2023/03-now",
     title: "自社開発が始まる",
     subtitle: "PLとして自社開発を始める",
   },
   {
-    date: "2023/6~7",
+    date: "2023/06~07",
     title: "reactに興味を持つ",
     subtitle:
       "reactに興味を持ちtrelloクローンをつくる",
   },
   {
-    date: "2023/9",
+    date: "2023/09",
     title: "受託開発を行う",
     subtitle: "3人で受託開発を行い、設計からあデプロイまで一通り行う",
   },
   {
-    date: "2023/9",
+    date: "2023/09",
     title: "インターンの仮リーダーになる",
     subtitle: "5人班の仮リーダーになる。MTGのMC,PL,レビューを行う",
   },

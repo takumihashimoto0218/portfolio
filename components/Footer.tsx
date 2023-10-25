@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { CSSProperties } from 'react';
 
-const footerStyle = {
+const footerStyle: CSSProperties = {
   backgroundColor: 'white',
   color: 'black',
   padding: '10px',

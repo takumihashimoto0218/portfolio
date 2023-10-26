@@ -27,7 +27,7 @@ const WorkList: Work[] = [
     tips: ["Ruby on Rails", "javascript",],
   },
   {
-    imagePath: "ainavi.png",
+    imagePath: "AInavi.png",
     imageHeight: 450,
     cardWidth: 450,
     title: "ainavi",

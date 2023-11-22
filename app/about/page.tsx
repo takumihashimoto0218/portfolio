@@ -1,29 +1,20 @@
 'use client'
 import React from 'react';
 import AboutList from '@/app/data/AboutList';
-import { motion, useScroll } from 'framer-motion';
-import Typography from "@mui/material/Typography";
+import { motion } from 'framer-motion';
 
 const Page = () => {
-  const { scrollXProgress } = useScroll();
-
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
       viewport={{ once: true }}
-      style={{ scaleY: scrollXProgress }}
     >
       <div className="bg-gray-100 py-16">
         <div className="container mx-auto">
-          <Typography
-            variant="h3"
-            fontFamily="monospace"
-            align="center"
-            sx={{ marginTop: '2rem', marginBottom: '2rem' }}
-          >
+          <h3 className="text-3xl font-mono text-center mt-8 mb-8">
             About
-          </Typography>
+          </h3>
           <div className="flex flex-col -mx-4">
             {AboutList.map((about) => (
               <div key={about.title} className="w-full px-4 mb-8">
@@ -42,7 +33,3 @@ const Page = () => {
 };
 
 export default Page;
-
-
-
-

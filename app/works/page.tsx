@@ -1,12 +1,7 @@
 'use client'
 import React from 'react';
 import WorkList from '@/app/data/WorkList';
-import Typography from "@mui/material/Typography";
 import Image from 'next/image';
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import Grid from "@mui/material/Grid";
-import Chip from "@mui/material/Chip";
 import { motion } from 'framer-motion';
 
 const Page = () => {
@@ -16,56 +11,36 @@ const Page = () => {
       whileInView={{ opacity: 1, y: 0, transition: { duration: 1 } }}
       viewport={{ once: true }}
     >
-      <Typography
-        variant="h3"
-        fontFamily="monospace"
-        align="center"
-        sx={{ marginTop: '2rem', marginBottom: '2rem' }}
-      >
+      <h3 className="text-3xl font-mono text-center mt-8 mb-8">
         My Work List
-      </Typography>
-      <Grid container spacing={3}>
+      </h3>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
         {WorkList.map((work) => (
-          <Grid item key={work.title} xs={12} sm={6} md={4}>
-            <Card sx={{ height: '100%', backgroundColor: 'whitesmoke' }}>
+          <div key={work.title} className="col-span-1">
+            <div className="bg-whitesmoke h-full">
               <Image
                 src={`/img/workimage/${work.imagePath}`}
                 height={work.imageHeight}
                 width={work.cardWidth}
                 alt={work.title}
               />
-              <CardContent sx={{ display: 'flex', flexDirection: 'column', padding: '16px' }}>
-                <Typography variant="h6" sx={{ flex: 1 }}>
-                  {work.title}
-                </Typography>
-                <Typography variant="body1">
-                  {work.description}
-                </Typography>
+              <div className="flex flex-col p-4">
+                <h6 className="text-lg mb-2">{work.title}</h6>
+                <p className="text-base">{work.description}</p>
                 <div>
                   {work.tips.map((tip, index) => (
-                    <Chip
-                      key={index}
-                      label={tip}
-                      variant="outlined"
-                      size="small"
-                      sx={{ backgroundColor: 'lightgray' }}
-                      style={{ marginRight: 4, marginBottom: 4 }}
-                    />
+                    <span key={index} className="bg-lightgray border border-gray-300 rounded-full px-2 py-1 text-sm mr-1 mb-1">
+                      {tip}
+                    </span>
                   ))}
                 </div>
-              </CardContent>
-            </Card>
-          </Grid>
+              </div>
+            </div>
+          </div>
         ))}
-      </Grid>
+      </div>
     </motion.div>
   );
 };
 
 export default Page;
-
-
-
-
-
-

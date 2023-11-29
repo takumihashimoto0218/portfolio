@@ -9,7 +9,7 @@ export type Work = {
 
 const WorkList: Work[] = [
   {
-    imagePath: "portfolio.png",
+    imagePath: "my-portfolio.png",
     imageHeight: 450,
     cardWidth: 450,
     title: "portfolioサイト",
@@ -18,7 +18,7 @@ const WorkList: Work[] = [
     tips: ["Next.js", "TypeScript"],
   },
   {
-    imagePath: "collection.png",
+    imagePath: "hanatane-collection.png",
     imageHeight: 450,
     cardWidth: 450,
     title: "hanatane-collection",
